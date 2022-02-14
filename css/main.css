@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #a5a5a5;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  margin-bottom: 22px;
+}
+
+.container .boxs:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.container .boxs:first-of-type .box:last-of-type .rate:first-of-type {
+  position: relative;
+  right: 100px;
+}
+.container .boxs:first-of-type .box:last-of-type .rate:nth-of-type(2) {
+  position: relative;
+  right: 50px;
+}
+
+@media (max-width: 991px) {
+  .container .boxs:first-of-type .box:last-of-type .rate:first-of-type {
+    right: 0px;
+  }
+  .container .boxs:first-of-type .box:last-of-type .rate:nth-of-type(2) {
+    right: 0px;
+  }
+}
+
+h2 {
+  padding-bottom: 11px;
+  color: #000;
+}
+
+.rate {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 11px;
+  margin-bottom: 11px;
+  padding: 11px 22px;
+  display: flex;
+  align-items: center;
+}
+
+.rate span {
+  display: block;
+  padding: 11px 22px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #000;
+}
+
+.container .boxs:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 75px;
+  gap: 10px;
+}
+
+.container .boxs:last-of-type .box {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 11px;
+  padding: 22px;
+}
+
+.container .boxs:last-of-type .box:first-of-type {
+  position: relative;
+  bottom: 50px;
+}
+.container .boxs:last-of-type .box:nth-of-type(2) {
+  position: relative;
+  bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .container .boxs:last-of-type .box:first-of-type {
+    bottom: 0px;
+  }
+  .container .boxs:last-of-type .box:nth-of-type(2) {
+    bottom: 0px;
+  }
+}
+
+.box .holder {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-bottom: 33px;
+}
+
+.holder img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+h5 {
+  color: #fff;
+  padding-bottom: 5px;
+}
