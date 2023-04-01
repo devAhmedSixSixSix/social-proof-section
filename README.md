@@ -1,5 +1,3 @@
-# Welcome! 👋
-
 <h1 align="center">
  Welcome! 👋 Social proof section.
 </h1>
